@@ -1,10 +1,6 @@
 version: 2
 jobs:
   build:
-    # Only build for changes to the gh-pages branch
-    branches:
-      only:
-        - gh-pages
     # The base environment we'll use (can be any docker image w/ git)
     docker:
       - image: circleci/python:3.6-stretch
