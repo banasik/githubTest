@@ -1,6 +1,10 @@
 version: 2
 jobs:
   build:
+    # Only build for changes to the gh-pages branch
+    branches:
+      only:
+        - gh-pages
     # The base environment we'll use (can be any docker image w/ git)
     docker:
       - image: circleci/python:3.6-stretch
@@ -8,12 +12,9 @@ jobs:
       # Move the repository code to our home directory in the CircleCI build
       - checkout
       # Add deployment key fingerprint for CircleCI to use for a push
-      - add_ssh_keys:
-          fingerprints:
-            - "5c774f227af7bfddd0355e03ba5d72dd2fb5e467"
+      
 
       # Add the mirror repository as a git remote
       - run:
          git remote add origin https://github.com/banasik/githubTest.git
-      - run:
          git push -u origin master      
