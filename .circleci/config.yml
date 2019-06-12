@@ -13,6 +13,6 @@ jobs:
 
       # Add the mirror repository as a git remote
       - run:
-         git remote add origin https://github.com/banasik/githubTest.git
+         git remote add github https://github.com/banasik/githubTest.git
       - run: 
-         git push -u origin master      
+         git push -u github master      
