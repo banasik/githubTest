@@ -2,10 +2,7 @@ version: 2
 
 jobs:
 
-    synrepos:
-
-        working_directory: ~/repo
-
+  
         docker:
 
             - image: circleci/ruby:2.4.1-jessie
