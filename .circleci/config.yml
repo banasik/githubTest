@@ -1,16 +1,9 @@
-version: 2
-
+version: 1
 jobs:
-
-  
-        docker:
-
-            - image: circleci/ruby:2.4.1-jessie
-        steps:
-            - checkout
-            - run:
-                name: syn bb to github
-                command: |
-
-                    git remote add origin https://github.com/banasik/githubTest.git
-                    git push -u origin master
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1-jessie
+    steps:
+      - run: |
+        git remote add origin https://github.com/banasik/githubTest.git
+		git push -u origin master
