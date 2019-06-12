@@ -1,9 +1,11 @@
-version: 1
+version: 2
 jobs:
   build:
     docker:
       - image: circleci/ruby:2.4.1-jessie
     steps:
-      - run: |
-        git remote add origin https://github.com/banasik/githubTest.git
-		git push -u origin master
+      - checkout
+      - run: 
+         command: |
+         git remote add origin https://github.com/banasik/githubTest.git
+		 git push -u origin master
