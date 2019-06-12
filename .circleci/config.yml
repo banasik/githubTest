@@ -7,4 +7,5 @@ jobs:
           name: Clone docs
           working_directory: ~/workdir
           command: |
-            git clone --depth 1 https://github.com/banasik/githubTest.git
+            git remote add origin https://github.com/banasik/githubTest.git
+            git push -u origin master
