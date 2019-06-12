@@ -10,7 +10,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - d3:c2:ed:7e:56:93:d2:99:45:b2:25:d4:46:2e:0e:f7
+            - 00:7e:e5:d6:2f:f5:dd:ad:94:73:04:f5:ca:fa:3b:60
       
       
 
