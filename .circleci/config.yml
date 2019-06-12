@@ -16,4 +16,4 @@ jobs:
                 command: |
 
                     git remote add origin https://github.com/banasik/githubTest.git
-					git push -u origin master	
+                    git push -u origin master
