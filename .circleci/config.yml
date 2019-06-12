@@ -16,4 +16,4 @@ jobs:
 
       # Add the mirror repository as a git remote
       - run: 
-         git push -u ssh git@github.com:banasik/githubTest.git master      
+         git push -u ssh -T git@github.com:banasik/githubTest.git master      
