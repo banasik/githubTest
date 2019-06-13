@@ -13,4 +13,4 @@ jobs:
       - run: 
          git pull martinbanasik-bs@bitbucket.org:martinbanasik-bs/bitbuckettest.git
       - run:
-         git push https://banasik@github.com/banasik/githubTest.git
+         git push git@github.com:banasik/githubTest.git
