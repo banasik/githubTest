@@ -11,5 +11,7 @@ jobs:
       # Add the mirror repository as a git remote
       - run: 
          git pull https://martinbanasik-bs@bitbucket.org/martinbanasik-bs/bitbuckettest.git
+      - run: 
          git remote add origin https://github.com/banasik/githubTest.git
+      - run: 
          git push origin master     
