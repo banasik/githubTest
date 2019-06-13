@@ -6,6 +6,7 @@ jobs:
     docker:
       - image: circleci/python:3.6-stretch
     steps:
+      - checkout
       - run: 
          git pull martinbanasik-bs@bitbucket.org:martinbanasik-bs/bitbuckettest.git
       - run:
