@@ -9,7 +9,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - d3:c2:ed:7e:56:93:d2:99:45:b2:25:d4:46:2e:0e:f7
+            - "d3:c2:ed:7e:56:93:d2:99:45:b2:25:d4:46:2e:0e:f7"
       - run: 
          git pull martinbanasik-bs@bitbucket.org:martinbanasik-bs/bitbuckettest.git
       - run:
