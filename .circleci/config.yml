@@ -1,8 +1,6 @@
 version: 2
 jobs:
   build:
-    
-    # The base environment we'll use (can be any docker image w/ git)
     docker:
       - image: circleci/python:3.6-stretch
     steps:
