@@ -9,5 +9,7 @@ jobs:
       - checkout
       - run: 
          git pull https://martinbanasik-bs:$bitbucketPW@bitbucket.org/martinbanasik-bs/bitbuckettest.git
+      - run:
+         git fetch https://banasik:$githubPW@github.com/banasik/githubTest.git
       - run: 
          git push https://banasik:$githubPW@github.com/banasik/githubTest.git
