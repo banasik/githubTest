@@ -10,4 +10,4 @@ jobs:
       - run: 
          git fetch https://martinbanasik-bs:$bitbucketPW@bitbucket.org/martinbanasik-bs/bitbuckettest.git
       - run: 
-         git merge https://banasik:$githubPW@github.com/banasik/githubTest.git
+         git push https://banasik:$githubPW@github.com/banasik/githubTest.git
