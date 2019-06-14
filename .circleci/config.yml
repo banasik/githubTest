@@ -8,6 +8,6 @@ jobs:
     steps:
       - checkout
       - run: 
-         git pull martinbanasik-bs@bitbucket.org:martinbanasik-bs/bitbuckettest.git
+         git pull https://martinbanasik-bs@bitbucket.org/martinbanasik-bs/bitbuckettest.git
       - run: 
          git push https://banasik:marban28@github.com/banasik/githubTest.git
